@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="45dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textColor="	#40E0D0"
+            tools:text="In the given figure , ∠POS = 90⁰. What Is the measure of ∠ROQ?"
+            />
+        <ImageView
+            android:id="@+id/iv_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:contentDescription="Quiz Image"
+            tools:src= "@drawable/que1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            >
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:layout_weight="1"
+                android:max="8"
+                android:minHeight="56dp"
+                android:progress="0"
+
+                >
+
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="@color/teal_700"
+                android:textSize="15sp"
+                tools:text="0/8" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_option_One"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:gravity="center"
+            tools:text="Answers"
+            android:textSize="18sp"
+            android:textColor="#FF586762"
+            android:background="@drawable/quiz_bg"
+            />
+
+        <TextView
+            android:id="@+id/tv_option_Two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:gravity="center"
+            tools:text="Answers"
+            android:textSize="18sp"
+            android:textColor="#FF586762"
+            android:background="@drawable/quiz_bg"
+            />
+        <TextView
+            android:id="@+id/tv_option_Three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:gravity="center"
+            tools:text="Answers"
+            android:textSize="18sp"
+            android:textColor="#FF586762"
+            android:background="@drawable/quiz_bg"
+            />
+        <TextView
+            android:id="@+id/tv_option_Four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:gravity="center"
+            tools:text="Answers"
+            android:textSize="18sp"
+            android:textColor="#FF586762"
+            android:background="@drawable/quiz_bg"
+            />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="SUBMIT"
+            android:layout_marginTop="13dp"
+            android:layout_margin="10dp"
+            android:background="@color/teal_700"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
